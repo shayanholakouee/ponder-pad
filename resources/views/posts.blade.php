@@ -9,10 +9,12 @@
     <title>My Blog</title>
 </head>
 <body>
-<article>
-  <?= $post; ?>
-</article>
 
-<a href="/">Go Back</a>
+    <?php foreach ($posts as $post): ?>
+        <article>
+            <?= $post; ?>
+        </article>
+    <?php @endforeach ?>
+
 </body>
 </html>
