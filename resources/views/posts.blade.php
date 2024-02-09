@@ -12,9 +12,14 @@
 
     <?php foreach ($posts as $post): ?>
         <article>
-            <?= $post; ?>
+            <h1>
+                <?= $post->title ?>
+            </h1>
+            <div>
+                <?= $posts->excerpt ?>
+            </div>
         </article>
-    <?php @endforeach ?>
+    <?php endforeach;?>
 
 </body>
 </html>
